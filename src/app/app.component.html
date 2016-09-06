@@ -1,3 +1,63 @@
-<h1>
-  {{title}}
-</h1>
+<style>
+
+</style>
+<img src="../images/WZ_prem_stack_2ck.png" height="50" alt="WirelessZone" style="margin-top:-20px; margin-left:5px;"/>
+<div class="va-middle" style="display:inline-block; margin-left:15px; font-family:'Georgia', 'Arial Narrow', Arial, sans-serif; font-size:42px; font-style:italic; font-weight:700">
+    <label style="font-style:normal; color:#1d2127">WZ</label>
+    <label style="color:red">INSIGHTS</label>
+</div>
+<md-sidenav-layout fullscreen style="background: #ECEDF0; margin-top:60px;">
+  <md-sidenav #sidenav mode="side" opened="true" style="background: #1D2127;">
+    <md-nav-list>
+      <section md-list-item style="background:#171717; height: 64px; margin-top:-8px;padding-left:5px; padding-top:20px">
+        
+        <p md-line style="color:lightgrey; opacity:0.5;"> 
+          Navigation
+        </p>
+      </section>
+      <a md-list-item >
+        <p md-line>THis is a line</p>
+      </a>
+      <a md-list-item>
+        <p md-line>THis is another line</p>
+      </a>
+    </md-nav-list>
+  </md-sidenav>
+  <md-toolbar style="background:#171717; color:white;">
+    <button md-icon-button (click)="sidenav.toggle()">
+      <md-icon>menu</md-icon>
+    </button>
+    WZ Insights
+    <button md-fab>
+      <md-icon>add</md-icon>
+    </button>
+  </md-toolbar>
+<md-progress-bar *ngIf="progressShowing"
+            class="app-progress"
+            mode="indeterminate"
+            aria-label="Indeterminate progress-bar example"></md-progress-bar>
+
+<div class="panel panel-default">
+  <div class="panel-body" style="padding-left:20px">
+    <h1>
+      {{title}}
+    </h1>
+    <md-card>
+      <md-card-title>title</md-card-title>
+      <md-card-content >
+        <md-input placeholder="Input Space" ></md-input>
+        
+        <button type="button" class="btn btn-primary" [@buttonState]="buttonState" >button</button>
+        <md-icon>home</md-icon>
+        
+        <button md-raised-button color="primary" (click)="toggleState()">Raised Button</button>
+      </md-card-content>
+    </md-card>
+    
+  </div>
+</div>
+
+
+
+</md-sidenav-layout>
+
