@@ -9,7 +9,7 @@ import { MdInputModule } from '@angular2-material/input';
 import { MdButtonModule } from '@angular2-material/button';
 import { MdButtonToggleModule } from '@angular2-material/button-toggle';
 import { MdCardModule } from '@angular2-material/card';
-import { MdIconModule } from '@angular2-material/icon';
+import { MdIconModule, MdIconRegistry } from '@angular2-material/icon';
 import { MdListModule } from '@angular2-material/list';
 import { MdMenuModule } from '@angular2-material/menu';
 import { MdProgressBarModule } from '@angular2-material/progress-bar';
@@ -49,7 +49,7 @@ import { MdRippleModule } from '@angular2-material/core/core';
     MdTooltipModule,
     MdRippleModule
   ],
-  providers: [],
+  providers: [MdIconRegistry],
   entryComponents: [AppComponent],
   bootstrap: [AppComponent]
 })

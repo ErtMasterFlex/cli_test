@@ -52935,7 +52935,7 @@ function applyCssTransform(element, transformValue) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular2_material_core__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icon_registry__ = __webpack_require__(267);
 /* unused harmony export MdIconInvalidNameError *//* unused harmony export MdIcon */
-/* harmony export */ __webpack_require__.d(exports, "a", function() { return MdIconModule; });/* unused harmony reexport MdIconRegistry */
+/* harmony export */ __webpack_require__.d(exports, "a", function() { return MdIconModule; });/* harmony reexport */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_3__icon_registry__, "a")) __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__icon_registry__["a"]; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -53196,7 +53196,7 @@ var MdIconModule = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__icon__ = __webpack_require__(439);
-/* harmony namespace reexport */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__icon__["a"]; });
+/* harmony namespace reexport */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__icon__["a"]; }); __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__icon__["b"]; });
 
 
 //# sourceMappingURL=index.js.map
@@ -68942,7 +68942,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_21__angular2_material_tooltip__["a" /* MdTooltipModule */],
                 __WEBPACK_IMPORTED_MODULE_22__angular2_material_core_core__["e" /* MdRippleModule */]
             ],
-            providers: [],
+            providers: [__WEBPACK_IMPORTED_MODULE_11__angular2_material_icon__["b" /* MdIconRegistry */]],
             entryComponents: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
         }), 
